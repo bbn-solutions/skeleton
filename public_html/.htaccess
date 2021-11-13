@@ -1,0 +1,12 @@
+Header set Access-Control-Allow-Origin: https://cdn2.thomas.lan/
+Header set Access-Control-Allow-Origin: https://cdn.bbn.io/
+# Header set Access-Control-Allow-Methods: GET,POST,OPTIONS
+<IfModule mod_rewrite.c>
+Options +Indexes
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/.well-known/
+# Only if the file does not exist
+RewriteCond %{SCRIPT_FILENAME} !-f
+# We send to index.php
+RewriteRule ^(.*)$ index.php [L]
+</IfModule>
