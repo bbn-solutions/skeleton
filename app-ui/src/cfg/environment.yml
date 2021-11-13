@@ -1,0 +1,65 @@
+---
+- env: dev # The type of env: must be dev test or prod
+  is_ssl: true # service workers won't work without SSL
+  admin_email: your@email.com # in dev and test mode all emails will be sent to this one
+  db_engine: mysql
+  db_host: my.mysql.host
+  database: my_database
+  db_user: my_db_user
+  db_pass: my_db_pass
+  server_name: my.domain.name
+  hostname: fqdn.of.server
+  public: /path/to/public_html/
+  shared_path: https://cdn.bbn.io/ # path to your CDN
+  static_path: https://cdn.bbn.io/assets/myApp/ # path to your assets on CDN
+  cur_path: / # where the app starts (after the domain name)
+  app_path: /path/to/app-ui/
+  tmp_path: /path/to/tmp/
+  lib_path: /path/to/app-ui/vendor/
+  data_path: /path/to/data/
+  log_path: /path/to/server/logs/
+  default_theme: default
+  root_checker: /path/to/app-ui/vendor/bbn/appui-core/src/mvc/private/access_control.php # Only needed for app-ui
+- env: test # The type of env: must be dev test or prod
+  is_ssl: true # service workers won't work without SSL
+  admin_email: your@email.com # in dev and test mode all emails will be sent to this one
+  db_engine: mysql
+  db_host: my.mysql.host
+  database: my_database
+  db_user: my_db_user
+  db_pass: my_db_pass
+  server_name: my.domain.name
+  hostname: fqdn2.of.server
+  public: /path/to/public_html/
+  shared_path: https://cdn.bbn.io/ # path to your CDN
+  static_path: https://cdn.bbn.io/assets/myApp/ # path to your assets on CDN
+  cur_path: / # where the app starts (after the domain name)
+  app_path: /path/to/app-ui/
+  tmp_path: /path/to/tmp/
+  lib_path: /path/to/app-ui/vendor/
+  data_path: /path/to/data/
+  log_path: /path/to/server/logs/
+  default_theme: default
+  root_checker: /path/to/app-ui/vendor/bbn/appui-core/src/mvc/private/access_control.php # Only needed for app-ui
+- env: prod # The type of env: must be dev test or prod
+  is_ssl: true # service workers won't work without SSL
+  admin_email: your@email.com # in dev and test mode all emails will be sent to this one
+  db_engine: mysql
+  db_host: my.mysql.host
+  database: my_database
+  db_user: my_db_user
+  db_pass: my_db_pass
+  server_name: my.domain.name
+  hostname: fqdn3.of.server
+  public: /path/to/public_html/
+  shared_path: https://cdn.bbn.io/ # path to your CDN
+  static_path: https://cdn.bbn.io/assets/myApp/ # path to your assets on CDN
+  cur_path: / # where the app starts (after the domain name)
+  app_path: /path/to/app-ui/
+  tmp_path: /path/to/tmp/
+  lib_path: /path/to/app-ui/vendor/
+  data_path: /path/to/data/
+  log_path: /path/to/server/logs/
+  default_theme: default
+  root_checker: /path/to/app-ui/vendor/bbn/appui-core/src/mvc/private/access_control.php # Only needed for app-ui
+...
