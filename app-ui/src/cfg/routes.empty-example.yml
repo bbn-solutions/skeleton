@@ -1,0 +1,12 @@
+default: home
+alias: # This lets you use the component autoload feature
+    components: component
+allowed:
+    - "*"
+appui: 
+root:
+    component: # Plugin needed for the component autoload feature
+        name: appui-component
+        root: lib
+        path: bbn/appui-component
+ 
