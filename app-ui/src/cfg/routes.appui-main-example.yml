@@ -1,0 +1,123 @@
+default: home
+alias:
+    sw: core/service/index
+    components: component
+allowed:
+    - "*"
+forbidden:
+    - client*
+    - admin*
+appui: 
+root:
+    core:
+        name: appui-core
+        root: lib
+        path: bbn/appui-core
+    component:
+        name: appui-component
+        root: lib
+        path: bbn/appui-component
+    option:
+        name: appui-option
+        root: lib
+        path: bbn/appui-option
+    usergroup:
+        name: appui-usergroup
+        root: lib
+        path: bbn/appui-usergroup
+    api:
+        name: appui-api
+        root: lib
+        path: bbn/appui-api
+    billing:
+        name: appui-billing
+        root: lib
+        path: bbn/appui-billing
+    cdn:
+        name: appui-cdn
+        root: lib
+        path: bbn/appui-cdn
+    chat:
+        name: appui-chat
+        root: lib
+        path: bbn/appui-chat
+    clipboard:
+        name: appui-clipboard
+        root: lib
+        path: bbn/appui-clipboard
+    config:
+        name: appui-config
+        root: lib
+        path: bbn/appui-config
+    cron:
+        name: appui-cron
+        root: lib
+        path: bbn/appui-cron
+    dashboard:
+        name: appui-dashboard
+        root: lib
+        path: bbn/appui-dashboard
+    database:
+        name: appui-database
+        root: lib
+        path: bbn/appui-database
+    email:
+        name: appui-email
+        root: lib
+        path: bbn/appui-email
+    entity:
+        name: appui-entity
+        root: lib
+        path: bbn/appui-entity
+    history:
+        name: appui-history
+        root: lib
+        path: bbn/appui-history
+    hr:
+        name: appui-hr
+        root: lib
+        path: bbn/appui-hr
+    internationalization:
+        name: appui-i18n
+        root: lib
+        path: bbn/appui-i18n
+    ide:
+        name: appui-ide
+        root: lib
+        path: bbn/appui-ide
+    meeting:
+        name: appui-meeting
+        root: lib
+        path: bbn/appui-meeting
+    menu:
+        name: appui-menu
+        root: lib
+        path: bbn/appui-menu
+    note:
+        name: appui-note
+        root: lib
+        path: bbn/appui-note
+    notification:
+        name: appui-notification
+        root: lib
+        path: bbn/appui-notification
+    project:
+        name: appui-project
+        root: lib
+        path: bbn/appui-project
+    server:
+        name: appui-server
+        root: lib
+        path: bbn/appui-server
+    statistic:
+        name: appui-statistic
+        root: lib
+        path: bbn/appui-statistic
+    style:
+        name: appui-style
+        root: lib
+        path: bbn/appui-style
+    pm:
+        name: appui-task
+        root: lib
+        path: bbn/appui-task
