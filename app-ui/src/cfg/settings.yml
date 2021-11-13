@@ -1,0 +1,18 @@
+---
+user: true
+preferences: true
+permissions: true
+options: true
+history: true
+encryption_key: appui
+fingerprint: unique_for_every_app
+app_name: unique_for_every_app
+app_prefix: ufea
+theme: default
+timezone: Europe/Paris
+sess_lifetime: 3600
+lang: en
+site_title: My empty site title
+client_name: My clients' name
+external_user_id: the_user_id_for_scripts
+...
